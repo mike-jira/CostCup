@@ -1,0 +1,42 @@
+{
+  // --- Emmet in JSX/TSX ---
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showExpandedAbbreviation": "always",
+  "emmet.includeLanguages": {
+    "typescriptreact": "html",
+    "javascriptreact": "html"
+  },
+
+  // --- TypeScript server (tsconfig lives in apps/web, not the repo root) ---
+  "js/ts.tsdk.path": "apps/web/node_modules/typescript/lib",
+  "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+
+  // --- Auto import ---
+  "js/ts.suggest.autoImports": true,
+  "js/ts.preferences.importModuleSpecifier": "non-relative",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  // --- Suggestion behaviour ---
+  "editor.suggestSelection": "first",
+  "editor.suggest.showStatusBar": true,
+  "editor.acceptSuggestionOnEnter": "on",
+
+  // --- Format on save (Prettier) + ESLint auto-fix ---
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  // eslint.config.js / .prettierrc อยู่ที่ apps/web ไม่ใช่ root
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "prettier.requireConfig": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true
+}
