@@ -21,7 +21,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     main: [
       {
         title: "Dashboard",
-        url: "#",
+        url: "/",
         icon: LayoutDashboardIcon,
       },
       {
@@ -31,7 +31,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       },
       {
         title: "วัตถุดิบ",
-        url: "#",
+        url: "/ingrediant",
         icon: BoxesIcon,
       },
     ],
