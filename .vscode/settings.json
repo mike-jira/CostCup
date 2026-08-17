@@ -19,6 +19,20 @@
   "editor.suggestSelection": "first",
   "editor.suggest.showStatusBar": true,
   "editor.acceptSuggestionOnEnter": "on",
+  // ให้ suggest ทำงานข้างในเครื่องหมายคำพูด (className="...")
+  "editor.quickSuggestions": { "strings": "on" },
+
+  // --- Tailwind CSS IntelliSense (v4: config อยู่ใน styles.css ไม่ใช่ tailwind.config.js) ---
+  "tailwindCSS.experimental.configFile": "apps/web/src/styles.css",
+  "tailwindCSS.classFunctions": ["cn", "cva"],
+  "tailwindCSS.classAttributes": ["class", "className", "classNames"],
+  // กันเส้นแดงใต้ @import / @custom-variant / @theme ใน styles.css
+  "css.lint.unknownAtRules": "ignore",
+
+  // --- Indentation (match .prettierrc tabWidth: 2) ---
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
 
   // --- Format on save (Prettier) + ESLint auto-fix ---
   "editor.formatOnSave": true,
